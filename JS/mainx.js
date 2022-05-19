@@ -1,3 +1,4 @@
+var barcode = null;
 var socket;
 var productCount = 0;
 var actualVolumeCount = 0;
@@ -3066,12 +3067,14 @@ function redirectTimerx(time) {
 
     window.setTimeout(function () {
       //////////////////////////////////////////////////////////////////// new
-      var barcode;
+      
       var plastic;
       var belowCode;
-      barcode = "VIMAB";
+      // barcode = "VIMAB";
+      barcode = selectedProductName+"_"+selectedVolume;
       plastic = "40";
       belowCode = "H___H___E___0___1___7___5";
+      console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxx", barcode); //Vim_200, Rin_200
 
       var obj = {
         productName: selectedProductName,
@@ -3831,10 +3834,11 @@ function updateStatus() {
       // divFillingAmount.innerHTML = parseInt(serialReturnVolume, 10);   ./// refer
       console.log("STOP PROCESSss Status " + ipc_state);
       //////////////////////////////////////////////////////////////////// new
-      var barcode;
+
       var plastic;
       var belowCode;
-      barcode = "VIMAB";
+      // barcode = "VIMAB";
+      barcode = selectedProductName+"_"+selectedVolume;
       plastic = "40";
       belowCode = "H___H___E___0___1___7___5";
 
