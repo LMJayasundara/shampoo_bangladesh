@@ -3074,7 +3074,7 @@ function redirectTimerx(time) {
       barcode = selectedProductName+"_"+selectedVolume+"_"+selectedBatchCode+"_"+selectedProductPrice;
       plastic = "40";
       belowCode = "H___H___E___0___1___7___5";
-      console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxx", barcode);
+      console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxx", barcode); //Vim_200_100_10, Rin_200_102_11
 
       var obj = {
         productName: selectedProductName,
