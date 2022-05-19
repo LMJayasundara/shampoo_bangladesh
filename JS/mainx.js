@@ -3071,10 +3071,10 @@ function redirectTimerx(time) {
       var plastic;
       var belowCode;
       // barcode = "VIMAB";
-      barcode = selectedProductName+"_"+selectedVolume+"_"+selectedBatchCode+"_"+selectedProductPrice;
+      barcode = selectedProductName+"_"+selectedVolume;
       plastic = "40";
       belowCode = "H___H___E___0___1___7___5";
-      console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxx", barcode); //Vim_200_100_10, Rin_200_102_11
+      console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxx", barcode); //Vim_200, Rin_200
 
       var obj = {
         productName: selectedProductName,
@@ -3838,7 +3838,7 @@ function updateStatus() {
       var plastic;
       var belowCode;
       // barcode = "VIMAB";
-      barcode = selectedProductName+"_"+selectedVolume+"_"+selectedBatchCode+"_"+selectedProductPrice;
+      barcode = selectedProductName+"_"+selectedVolume;
       plastic = "40";
       belowCode = "H___H___E___0___1___7___5";
 
